@@ -6,10 +6,10 @@ import Image from 'next/image'
 
 const Footer3 = () => {
   return (
-    <div className="w-full relative flex items-center justify-center py-32">
-        <div className="flex flex-col items-center justify-center gap-2 z-10 text-slate-50">
-          <p className="font-semibold text-4xl">Looking to get a quote on your next project?</p>
-          <Link href="tel:416-895-5543">CALL US TODAY AT (416) 312-8015 FOR A FREE CONSULTATION</Link>
+    <div className="w-full relative flex items-center justify-center py-32 px-6">
+        <div className="flex flex-col items-center justify-center gap-2 z-10 text-slate-50 text-center">
+          <p className="font-semibold text-2xl lg:text-4xl">Looking to get a quote on your next project?</p>
+          <Link href="tel:416-895-5543" className="text-sm lg:text-lg">CALL US TODAY AT (416) 312-8015 FOR A FREE CONSULTATION</Link>
           <Button className="h-[55px] w-[300px] mt-8 text-black bg-slate-50">RECEIVE A FREE QUOTE <Calculator /></Button>
         </div>
           <Image

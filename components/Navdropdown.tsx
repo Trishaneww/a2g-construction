@@ -17,12 +17,12 @@ import { services } from "@/data"
  
 export function NavDropDown() {
   return (
-    <NavigationMenu className="mt-[1.3rem] hidden lg:flex bg-slate-900">
+    <NavigationMenu className="mt-[0.1rem] hidden lg:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-base font-normal bg-slate-900 text-slate-50">Services</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-red-900 border-none">
-            <ul className="flex flex-wrap w-[200px] md:w-[250px] gap-1 p-2 md:p-4 bg-slate-900">
+          <NavigationMenuTrigger className="text-base font-normal text-slate-50 hover:text-[#54acff]" >Services</NavigationMenuTrigger>
+          <NavigationMenuContent className="border-none">
+            <ul className="flex flex-wrap w-[200px] md:w-[250px] ml-10 gap-1 p-2 md:p-4">
               {services.map((service:any) => (
                 <a href={service.link} key={service.id} className="w-full lg:w-4/5 p-2 text-slate-50">{service.title}</a>
               ))}

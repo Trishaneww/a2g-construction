@@ -3,7 +3,7 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center gap-12 px-12 py-12 ">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-16 px-12 py-12 lg:h-[45vh]">
         <div className="flex flex-col items-center justify-center text-center lg:w-[25%] gap-2">
             <Image
                 width={180}
