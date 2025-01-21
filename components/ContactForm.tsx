@@ -47,7 +47,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-center gap-24 bg-slate-100 pb-28 py-28">
+    <div className="flex flex-col xl:flex-row items-center justify-center gap-24 pb-28 py-28">
 
       <section className="min-w-[320px] w-1/4 xl:min-w-[400px]">
         <Image
