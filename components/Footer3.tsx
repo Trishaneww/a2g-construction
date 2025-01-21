@@ -1,0 +1,27 @@
+import Link from 'next/link'
+import React from 'react'
+import { Button } from './ui/button'
+import { Calculator } from 'lucide-react'
+import Image from 'next/image'
+
+const Footer3 = () => {
+  return (
+    <div className="w-full relative flex items-center justify-center py-32">
+        <div className="flex flex-col items-center justify-center gap-2 z-10 text-slate-50">
+          <p className="font-semibold text-4xl">Looking to get a quote on your next project?</p>
+          <Link href="tel:416-895-5543">CALL US TODAY AT (416) 312-8015 FOR A FREE CONSULTATION</Link>
+          <Button className="h-[55px] w-[300px] mt-8 text-black bg-slate-50">RECEIVE A FREE QUOTE <Calculator /></Button>
+        </div>
+          <Image
+          src="/assets/cta.png"
+          width={1000}
+          height={1000}
+          alt="a2g construction logo"
+          className="absolute top-0 w-full h-full object-cover"
+        />
+        <div className="absolute top-0 w-full h-full object-cover bg-black opacity-50"></div>
+    </div>
+  )
+}
+
+export default Footer3
