@@ -181,3 +181,35 @@ export const testimonials = [
 ]
 
 
+export const processData = [
+    {
+        id:1,
+        title: 'Site Visit',
+        desc: 'When you book a complimentary consultation, we perform a site visit to help determine our team will be the right fit for your home renovation and construction project.'
+    },
+    {
+        id:2,
+        title: 'Client Wishlist',
+        desc: 'We talk about your wish list, project plan, and goals to better understand the vision and objectives of your home renovation.'
+    },
+    {
+        id:3,
+        title: 'Estimate & Budget',
+        desc: "We provide a free estimate and draft a rough project proposal to ensure this project aligns within your budget. This includes details of what we’re doing to achieve your renovation, what we’re removing, disposing and adding."
+    },
+    {
+        id:4,
+        title: 'Permits & Timeline',
+        desc: 'After receiving approval, we establish a project timeline and apply for necessary permits on your behalf. Our team will also provide you with site updates and construction progress to ensure we follow our set schedules.'
+    },
+    {
+        id:5,
+        title: 'Construction Starts',
+        desc: 'Once we receive the permits, our team will start the construction process of renovating your home. This where you sit back and see your dream home come to life.'
+    },
+    {
+        id:6,
+        title: 'Renovation Complete',
+        desc: "The long wait is over. Now you can enjoy your newly renovated home with joy. Best of all, you don’t have to worry about cleaning or waste disposal because we take care of that for you."
+    },
+]

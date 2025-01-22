@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 const CTA = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4 text-center my-20">
+    <div className="flex flex-col items-center justify-center w-full gap-4 text-center py-20 bg-slate-100">
         <Image
             width={180}
             height={180} 
