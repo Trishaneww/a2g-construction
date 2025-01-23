@@ -107,10 +107,11 @@ const Navbar = () => {
         </Accordion>
       </div>
       <a href="/#faq">FAQ</a> 
-
       <Link href="tel:647-938-0208">
-          <Button className="w-[220px] h-[50px] text-base bg-[#2478c7] hidden lg:flex hover:bg-white hover:text-slate-950">Call us 647-938-0208</Button>
+          <Button className="w-[220px] h-[50px] text-base bg-[#2478c7] hover:bg-slate-50 hover:text-[#2478c7] hover:border-[1px] hover:border-[#2478c7]">Call us 647-938-0208</Button>
         </Link>
+
+     
     </div>
   </nav>
    

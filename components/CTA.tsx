@@ -13,7 +13,7 @@ const CTA = () => {
             alt="google business 5 star reviews"
         />
         <p className="font-semibold text-3xl">Trusted by Homeowners and Businesses Alike</p>
-        <p className="w-[95%] lg:w-[60%]">Join the many satisfied clients who have chosen us for their construction and renovation needs. With a proven track record of delivering exceptional results, we’re the team you can rely on for quality craftsmanship, transparent communication, and projects completed on time and within budget. Let us bring your vision to life!</p>
+        <p className="w-[95%] lg:w-[60%] font-light">Join the many satisfied clients who have chosen us for their construction and renovation needs. With a proven track record of delivering exceptional results, we’re the team you can rely on for quality craftsmanship, transparent communication, and projects completed on time and within budget. Let us bring your vision to life!</p>
         <Link href="/contact"><Button className="w-[220px] h-[55px]">Get a Free Estimate</Button></Link>
 
     </div>

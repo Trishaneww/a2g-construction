@@ -10,7 +10,7 @@ const Footer3 = () => {
         <div className="flex flex-col items-center justify-center gap-2 z-10 text-slate-50 text-center">
           <p className="font-semibold text-2xl lg:text-4xl">LOOKING TO GET A QUOTE ON YOUR NEXT PROJECT?</p>
           <Link href="tel:416-895-5543" className="text-sm lg:text-lg">CALL US TODAY AT 647-938-0208 FOR A FREE CONSULTATION</Link>
-          <Link href="/contact"><Button className="h-[55px] w-[300px] mt-8 text-black bg-slate-50">Get a Free Quote<Calculator /></Button></Link>
+          <Link href="/contact"><Button className="h-[55px] w-[300px] mt-8 text-black bg-slate-50">Get a Free Estimate<Calculator /></Button></Link>
         
         </div>
           <Image

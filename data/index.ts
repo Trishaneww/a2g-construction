@@ -31,7 +31,7 @@ export const services = [
     {
         id:1,
         title: 'Legal Basements',
-        src: '/assets/service2.png',
+        src: '/assets/reno11.png',
         desc:"Transform your basement into a functional and beautiful living space with our expert design and finishing services. From cozy retreats to home offices, we bring your vision to life.",
         link: '#services'
     },
@@ -45,42 +45,42 @@ export const services = [
     {
         id:4,
         title: 'Decks & Fences',
-        src: '/assets/service2.png',
+        src: '/assets/decks.jpg',
         desc:"Upgrade your bathroom with modern designs, quality fixtures, and flawless finishes. We create spaces that are stylish, functional, and tailored to your needs.",
         link: '#services'
     },
     {
         id:6,
         title: 'Indoor & Outdoor Potlights',
-        src: '/assets/service2.png',
+        src: '/assets/potlight.jpg',
         desc:"Illuminate your home with professionally installed potlights for a sleek, modern look. Whether indoors or outdoors, we ensure perfect placement and energy efficiency.",
         link: '#services'
     },
     {
         id:7,
         title: 'Painting (Interior & Exterior)',
-        src: '/assets/service2.png',
-        desc:"Refresh your home’s appearance with our professional painting services. We deliver smooth, vibrant finishes for both interiors and exteriors that last.",
+        src: '/assets/painting.jpeg',
+        desc:"Refresh your homes appearance with our professional painting services. We deliver smooth, vibrant finishes for both interiors and exteriors that last.",
         link: '#services'
     },
     {
         id:8,
         title: 'Handyman Services',
-        src: '/assets/service2.png',
-        desc:"From minor repairs to maintenance projects, we’re your go-to for reliable and efficient handyman services that keep your home in top shape.",
+        src: '/assets/handyman.jpg',
+        desc:"From minor repairs to maintenance projects, we are your go-to for reliable and efficient handyman services that keep your home in top shape.",
         link: '#services'
     },
     {
         id:3,
         title: 'Flooring',
-        src: '/assets/service1.png',
+        src: '/assets/flooring.png',
         desc:"Elevate your space with high-quality flooring installation. From hardwood to tile, we offer expert craftsmanship and attention to detail for every room.",
         link: '#services'
     },
     {
         id:5,
         title: 'Landscaping',
-        src: '/assets/service1.png',
+        src: '/assets/landscaping.jpeg',
         desc:"Beautify your outdoor space with our custom landscaping solutions. From lush gardens to stunning patios, we create inviting landscapes that enhance your property.",
         link: '#services'
     },
@@ -89,32 +89,52 @@ export const services = [
 export const gallery = [
     {
         id:1,
-        src: '/assets/service1.png',
+        src: '/assets/reno3.png',
+        title: 'Bathroom Renovation'
+    },
+    {
+        id:1,
+        src: '/assets/reno9.png',
+         title: 'Flooring Installment'
+    },
+    {
+        id:1,
+        src: '/assets/reno11.png',
         title: 'Basement Renovation'
     },
     {
         id:1,
-        src: '/assets/service1.png',
-         title: 'Bathroom Renovation'
-    },
-    {
-        id:1,
-        src: '/assets/service1.png',
+        src: '/assets/reno1.png',
         title: 'Window Enlargment'
     },
     {
         id:1,
-        src: '/assets/service1.png',
+        src: '/assets/reno17.png',
         title: 'Window Enlargment'
     },
     {
         id:1,
-        src: '/assets/service1.png',
+        src: '/assets/reno4.png',
         title: 'Window Enlargment'
     },
     {
         id:1,
-        src: '/assets/service1.png',
+        src: '/assets/reno6.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/service2.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno12.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno18.png',
         title: 'Window Enlargment'
     },
 ]
@@ -122,23 +142,23 @@ export const gallery = [
 export const Renovations = [
     {
         id:1,
-        src1: '/assets/reno1.png',
-        src2: '/assets/reno2.png',
-        title: 'MISSISSAUGA RESIDENCE',
+        src1: '/assets/reno7.png',
+        src2: '/assets/reno1.png',
+        title: 'OAKVILLE',
         title2: 'BATHROOM RENOVATION'
     },
     {
         id:1,
-        src1: '/assets/reno1.png',
-        src2: '/assets/reno2.png',
-        title: 'MISSISSAUGA RESIDENCE',
-        title2: 'BATHROOM RENOVATION'
+        src1: '/assets/reno10.png',
+        src2: '/assets/reno12.png',
+        title: 'MISSISSAUGA',
+        title2: 'BASEMENT REDESIGN'
     },
     {
         id:1,
-        src1: '/assets/reno1.png',
-        src2: '/assets/reno2.png',
-        title: 'MISSISSAUGA RESIDENCE',
+        src1: '/assets/reno15.png',
+        src2: '/assets/service2.png',
+        title: 'HAMILTON',
         title2: 'BATHROOM RENOVATION'
     },
     {

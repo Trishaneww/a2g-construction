@@ -12,7 +12,7 @@ const Testimonials = () => {
                 src="/assets/google.png"
                 alt="google business 5 star reviews"
             />
-            <p className="h-[150px]">"Our backyard feels like a whole new space thanks to the beautiful deck and sturdy fence they built for us. The team was professional, efficient, and the quality of their work is outstanding. We have already recommended them to friends!"</p>
+            <p className="lg:h-[150px]">"Our backyard feels like a whole new space thanks to the beautiful deck and sturdy fence they built for us. The team was professional, efficient, and the quality of their work is outstanding. We have already recommended them to friends!"</p>
             <p>- Karen L.</p>
         </div>
 
@@ -23,7 +23,7 @@ const Testimonials = () => {
                 src="/assets/houzz.png"
                 alt="google business 5 star reviews"
             />
-            <p  className="h-[150px]">"Gerhard turned our dark, unfinished basement into a cozy family retreat. They listened to every detail of our vision and brought it to life with incredible craftsmanship. The entire process was smooth, and we could not be happier with the results!"</p>
+            <p  className="lg:h-[150px]">"Gerhard turned our dark, unfinished basement into a cozy family retreat. They listened to every detail of our vision and brought it to life with incredible craftsmanship. The entire process was smooth, and we could not be happier with the results!"</p>
             <p>- Mark T.</p>
         </div>
 
@@ -34,7 +34,7 @@ const Testimonials = () => {
                 src="/assets/yelp.png"
                 alt="google business 5 star reviews"
             />
-            <p className="h-[150px]">"A2G Construction went above and beyond to make sure every element of the renovation was perfect. From the sleek tile work to the custom vanity, their craftsmanship is second to none. They kept me updated throughout the project, so I always knew what to expect. I highly recommend their services!</p>
+            <p className="lg:h-[150px]">"A2G Construction went above and beyond to make sure every element of the renovation was perfect. From the sleek tile work to the custom vanity, their craftsmanship is second to none. They kept me updated throughout the project, so I always knew what to expect. I highly recommend their services!</p>
             <p>- Sarah J.</p>
         </div>
     </div>

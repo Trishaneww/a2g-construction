@@ -5,21 +5,46 @@ import Testimonials from '@/components/Testimonials'
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/components/hooks/use-toast"
-import { Button } from '@/components/ui/button'
+import { Input } from '../../components/ui/input'
+import { Checkbox } from '../../components/ui/checkbox'
+import { Button } from '../../components/ui/button'
+import { Textarea } from '../../components/ui/textarea'
 import Footer from '@/components/Footer'
 import { Toaster } from '@/components/ui/toaster'
 import Link from 'next/link'
+import { ArrowLeft, ArrowRight, Facebook, Instagram, MessageCircle, Phone, Star, Twitter, Youtube } from 'lucide-react'
+import Image from 'next/image'
+
+const images = [
+  "/assets/service2.png",
+  "/assets/reno1.png",
+  "/assets/service1.png",
+  "/assets/reno4.png",
+  "/assets/reno6.png",
+];
 
 const Contact = () => {
+    const [currentIndex, setCurrentIndex] = useState<number>(0); // Explicitly type state as number
+
+    const handleNext = () => {
+      setCurrentIndex((prevIndex: number) => (prevIndex + 1) % images.length); // Type prevIndex
+    };
+  
+    const handlePrev = () => {
+      setCurrentIndex((prevIndex: number) => (prevIndex - 1 + images.length) % images.length); // Type prevIndex
+    };
+
     const [emailError, setEmailError] = useState("")
     const [nameError, setNameError] = useState("")
-  
+    
     const { toast } = useToast()
     const sendEmail = (e:any) => {
       e.preventDefault();
+      console.log("clicked")
   
       try {
-        if (e.target.email.value === "" || e.target.full_name.value === "" || e.target.address.value === "") {
+        console.log("hi")
+        if (e.target.email.value === "" || e.target.full_name.value === "") {
   
             if (e.target.email.value === "") {
               setEmailError("Email is required")
@@ -29,7 +54,7 @@ const Contact = () => {
             } 
    
         } else {
-  
+            console.log("hello")
             emailjs.sendForm('service_luvg8op', 'template_sx6i957' , e.target , '1MxDwCSvQF6Leln4f');
              e.target.reset()
              setEmailError("")
@@ -38,88 +63,136 @@ const Contact = () => {
             toast({
                 title: "Email Sent",
                 description: "We will get back to you shortly",
-      })
-  
+            })
         }
       } catch (err) {
         console.log(err)
       }
     }
   return (
-    <div className="flex flex-col scroll-smooth bg-[#FAFAFA]">
-      <Navbar />
-      <div className="flex flex-col lg:flex-row gap-8 mt-4 lg:mt-32 mb-44 justify-between items-center px-6 lg:px-24 font-light">
+    <div>
+    <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-4 bg-[#FAFAFA] px-4 mt-6">
+        <form onSubmit={sendEmail} className="xl:w-[40%] xl:h-[94vh] flex flex-col gap-2 rounded-2xl px-4 lg:px-10 py-2 pt-6 bg-white border-[1.5px] border-gray-200">
+            <Link href="/">
+                    <Image
+                        width={110}
+                        height={110}
+                        src="/assets/logo4.png"
+                        alt="Stephenson media logo"
+                        className="rounded-lg"
+                    />
+            </Link>
+            <div className="flex flex-col gap-2 mt-6">
+                <h1 className="text-3xl lg:text-4xl font-semibold">Got ideas? We've got the skills. Lets team up.</h1>
+                <p>Tell us more about yourself and what you've got in mind.</p>
+            </div>
 
-        <section className="flex flex-col gap-2 lg:w-[58%]">
-            <p className="text-3xl lg:text-6xl font-semibold">Get a Free Estimate</p>
-            <p className="text-base lg:text-lg lg:w-[60%] font-light mt-4">Once we receive the permits, our team will start the construction process of renovating your home. </p>
-            <Link href='mailto:a2gconstructioninc@gmail.com' className="text-base lg:text-lg font-normal">a2gconstructioninc@gmail.com</Link>
-            <Link className="text-base lg:text-lg font-normal" href="tel:647-938-0208">Call us 647-938-0208</Link>
-            <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 mt-6">
-                <div className="flex flex-col gap-2">
-                    <p className="font-bold">Craftsmanship That Exceeds Expectations</p>
-                    <p>Our skilled team delivers top-quality renovations with precision and attention to detail, ensuring every project meets the highest standards and brings your vision to life.</p>
+            <div className="flex flex-col gap-3 mt-6">
+                <p className="font-semibold">Service of Interest</p>
+                <div className="flex gap-2">
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300" />
+                        <p>Legal Basements</p>
+                    </div>
+
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <p>Bathroom Renovations</p>
+                    </div>
                 </div>
 
-                <div className="flex flex-col gap-2">
-                    <p className="font-bold">A Stress-Free Renovation Experience</p>
-                    <p>From permits to construction, we handle every step of the process, keeping you informed and confident while creating a space you will love.</p>
+                <div className="flex gap-2">
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <p>Decks & Fences</p>
+                    </div>
+
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <p>Indoor & Outdoor Potlights</p>
+                    </div>
                 </div>
 
-                <div className="flex flex-col gap-2">
-                    <p className="font-bold">Custom Solutions Tailored to Your Needs</p>
-                    <p>Every project is unique, and we take the time to understand your style, functionality, and goals to create a space that is perfectly suited to you.</p>
+                <div className="flex gap-2">
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms"className="bg-slate-50 border-gray-300" />
+                        <p>Painting (Interior & Exterior)</p>
+                    </div>
+
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <p>Handyman Services</p>
+                    </div>
+                </div>
+
+                <div className="flex gap-2">
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms"className="bg-slate-50 border-gray-300" />
+                        <p>Flooring</p>
+                    </div>
+
+                    <div className="flex gap-2 items-center w-[250px]">
+                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <p>Landscaping</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <form className="w-full lg:w-[500px] flex flex-col items-center xl:items-start gap-4 px-6 py-20 bg-white border-[1px] border-gray-200 rounded-2xl shadow-lg" onSubmit={sendEmail}>
-        <p className="text-3xl font-semibold">Your Dream Renovation Starts With a Conversation
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full mt-6">
-            <div className="flex flex-col items-start w-full gap-2">
-                <input 
-                type="text" 
-                name="full_name"
-                placeholder="Full Name*"
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
-                <p className="ml-1 text-red-600">{nameError}</p>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+                <Input type="text" placeholder='Name' name="full_name" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
 
-            <div className="flex flex-col items-start w-full gap-2">
-                <input 
-                type="text" 
-                name="email" 
-                placeholder="Email*" 
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
-                <p className="ml-1 text-red-600">{emailError}</p>
-            </div>
-            <div className="flex flex-col items-start w-full gap-2">
-                <input 
-                type="text" 
-                name="phone"
-                placeholder="Phone"
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
-            </div>
-            <div className="flex flex-col items-start w-full gap-2">
-                <input 
-                type="text" 
-                name="address" 
-                placeholder="Address" 
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
-            </div>
-        </div>
+                <Input type="email" placeholder='Email' name="email" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
 
-          <div className="flex flex-col items-start w-full gap-2">
-            <textarea placeholder="Tell us more about your project" name="message" className="w-full border-[1px] h-[100px] lg:h-[130px] border-slate-200 p-2 rounded-md outline-none placeholder:text-base text-black" />
-          </div>      
-          <Button type="submit" className="h-[55px] px-10 mt-4 w-full">Request a Free Estimate</Button>
+                <Input type="text" placeholder='Phone' name="phone" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
+
+                <Input type="text" placeholder='Address' name="address" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
+            </div>
+            <Textarea placeholder="Tell us more about your project" name="phone" className="mt-2 w-full h-[115px] p-2 placeholder:text-base focus-visible:ring-0" />
+            <Button type="submit" className="w-full h-[55px] mt-12 text-lg">Lets get started!</Button>
         </form>
 
-      </div>
-      <Footer />
-      <Footer2 />
-      <Toaster />
+        
+        <div className="relative w-full h-[600px] xl:h-[94vh] rounded-2xl mb-20">
+            <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                className="w-full h-full object-cover rounded-2xl"
+            />
+
+            <div className="absolute bottom-20 left-4 space-x-2 z-20 text-slate-50 flex flex-col gap-2 w-[80%]">
+                <div className="flex gap-2">
+                    <Star />
+                    <Star />
+                    <Star />
+                    <Star />
+                    <Star />
+                </div>
+                <p className="text-sm lg:text-lg">"A2G Construction went above and beyond to make sure every element of the renovation was perfect. From the sleek tile work to the custom vanity, their craftsmanship is second to none. They kept me updated throughout the project, so I always knew what to expect. I highly recommend their services!</p>
+                <p className="font-semibold text-sm lg:text-lg mt-2">— Mike Redding</p>
+                <p className="text-sm lg:text-base">Head Coach, City Strikers FC</p>
+            </div>
+
+
+
+            <div className="absolute bottom-4 right-4 flex lg:space-x-2 z-20">
+                <button
+                    onClick={handlePrev}
+                    className="bg-transparent text-white w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] px-3 py-2 rounded text-6xl flex justify-center items-center"
+                >
+                <ArrowLeft size={40}/>
+                </button>
+                <button
+                    onClick={handleNext}
+                    className="bg-transparent  text-white w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] px-3 py-2 rounded flex justify-center items-center"
+                >
+                <ArrowRight size={40}/>
+                </button>
+            </div>
+            <div className="absolute top-0 w-full h-full bg-[#000000a7] backdrop-blur-[2px] z-0 opacity-60 rounded-2xl"></div>
+        </div>
+    </div>
+    <Footer />
+    <Toaster />
     </div>
   )
 }
