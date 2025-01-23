@@ -20,7 +20,7 @@ const Faq = () => {
                 {faqData.map((accordion:any, idx:number) => (
                     <AccordionItem value={`item-${idx}`} className="py-2 px-4 rounded-2xl bg-white border-[1px] border-gray-200" key={idx}>
                     <AccordionTrigger className="text-base md:text-lg text-left">{accordion.item}</AccordionTrigger>
-                        <AccordionContent className="text-base lg:text-lg py-8">
+                        <AccordionContent className="text-base fontlg:text-lg py-8">
                             {accordion.content}
                         </AccordionContent>
                     </AccordionItem>

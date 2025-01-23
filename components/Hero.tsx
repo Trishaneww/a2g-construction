@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import ContactForm from './ContactForm'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -16,17 +17,17 @@ const Hero = () => {
 
        <div className="absolute top-0 w-full h-full object-cover bg-black opacity-50"></div>
 
-       <section className="lg:w-[65%] flex flex-col items-center z-30 text-slate-50 lg:ml-12">
+       <section className="lg:w-[65%] flex flex-col items-center z-30 text-slate-50 mt-20 lg:mt-0 lg:ml-12">
        <div className="flex flex-col items-center lg:items-start gap-4 lg:w-[70%]">
-        <p className="text-lg font-semibold">Your Trusted Partner for Stress-Free Renovations</p>
+        <p className="text-lg font-semibold text-center lg:text-left">Your Trusted Partner for Stress-Free Renovations</p>
         <p className="font-semibold text-3xl lg:text-5xl text-center lg:text-left">Expert Renovations You Can Count On to Transform Your Space</p>
-        <Button className="w-[220px] h-[55px] bg-[#2478c7] text-white hover:bg-slate-50 hover:text-[#2478c7] hover:border-[1px] hover:border-[#2478c7] mt-2">Get a Free Estimate</Button>
+        <Link href="/contact">  <Button className="hidden lg:flex w-[220px] h-[55px] bg-[#2478c7] text-white hover:bg-slate-50 hover:text-[#2478c7] hover:border-[1px] hover:border-[#2478c7] mt-2">Get a Free Estimate</Button></Link>
        </div>
        </section>
 
        <div className="flex justify-center items-center relative h-full w-full lg:w-[75%]">
       <div
-        className="relative w-full h-full bg-black opacity-0 lg:opacity-50 z-10"
+        className="relative w-full h-full bg-[#2478c7] opacity-0 lg:opacity-20 z-10"
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 30% 100%)",
         }}

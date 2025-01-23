@@ -9,7 +9,7 @@ const Areas = () => {
             <p className="text-3xl lg:text-4xl">AREAS WE SERVICE</p>
 
             <section className="flex flex-col gap-4 mt-6 lg:mt-6">
-                <p className="text-lg font-light">We proudly serve a wide range of areas, bringing expert construction and renovation services to homes and businesses across the region. Whether you are looking to renovate a bathroom, build a custom deck, or update your landscape, our team is ready to deliver top-quality results tailored to your needs.</p>
+                <p className="text-base lg:text-lg font-light">We proudly serve a wide range of areas, bringing expert construction and renovation services to homes and businesses across the region. Whether you are looking to renovate a bathroom, build a custom deck, or update your landscape, our team is ready to deliver top-quality results tailored to your needs.</p>
                 <ul className="grid grid-cols-2 lg:grid-cols-5 gap-2">
                     {areas.map((area, idx) => (
                         <li className="font-normal" key={idx}>{area.name}</li>
@@ -17,7 +17,7 @@ const Areas = () => {
                 </ul>
             </section>
 
-            <p className="text-lg font-light mt-6"><Link href="/contact" className="text-blue-700">Contact us</Link> today for a free consultation and make your renovation dreams a reality.</p>
+            <p className="text-base lg:text-lg font-light mt-6"><Link href="/contact" className="text-blue-700">Contact us</Link> today for a free consultation and make your renovation dreams a reality.</p>
         </div>
     </div>
   )

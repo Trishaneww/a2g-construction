@@ -27,7 +27,7 @@ const Home = () => {
       <div id="projects">
         <Projects />
       </div>
-      <div id="projects">
+      <div id="process">
         <Process />
       </div>
       <Areas />

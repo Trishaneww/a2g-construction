@@ -24,15 +24,15 @@ const Services: React.FC = () => {
   return (
     <div className="flex flex-col mt-12 lg:mt-32 mb-20 items-center gap-12">
 
-        <div className="flex flex-col items-center gap-2 w-[85%] xl:w-[65%]">
-          <section className="flex flex-col lg:ml-6">
-            <p className="text-3xl lg:text-4xl font-black">OUR TORONTO HOME RENOVATION SERVICES</p>
-            <p className="text-lg font-light mt-6">From kitchen renovations to condo and full home transformations, Astaneh Construction turns ideas into inspiring realities for our clients! Dont forget to zoom in on the images, as every detail highlights the skill and dedication that make our renovation projects exceptional!</p>
+        <div className="flex flex-col items-center gap-2 w-full xl:w-[85%] max-w-[1200px] px-6">
+          <section className="flex flex-col text-center items-center">
+            <p className="text-3xl lg:text-4xl font-black">OUR HOME RENOVATION SERVICES</p>
+            <p className="text-lg font-light mt-6 lg:w-[60%]">Discover our range of expert renovation and construction services, designed to bring your vision to life with precision, creativity, and lasting quality.</p>
           </section>
 
-          <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:hidden">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:hidden">
             {services.slice(0,8).map((service, idx) => (
-              <div className="bg-white slate border-[1px] border-gray-200 flex flex-col h-[420px] xl:h-[540px] lg:w-[370px] shadow-lg" key={idx}>
+              <div className="bg-white slate border-[1px] border-gray-200 flex flex-col max-w-[400px] h-[420px] xl:h-[540px] lg:w-[370px] shadow-lg" key={idx}>
                 <div className="overflow-hidden">
                   <Image
                     src={service.src}
@@ -60,14 +60,14 @@ const Services: React.FC = () => {
               }}
             >
                 {services.map((service, idx) => (
-                <div className="bg-white slate border-[1px] border-gray-200 flex flex-col h-[420px] xl:h-[540px] min-w-[calc(100%/1)] lg:min-w-[calc(100%/3.1)] shadow-lg" key={idx}>
+                <div className="bg-white slate border-[1px] border-gray-200 flex flex-col h-[420px] xl:h-[580px] min-w-[calc(100%/1)] lg:min-w-[calc(100%/3.1)] shadow-lg" key={idx}>
                   <div className="overflow-hidden">
                   <Image
                     src={service.src}
                     width={1000}
                     height={1000}
                     alt="logo image"
-                    className="h-[340px] hover:scale-110 duration-500 transition-transform" 
+                    className="h-[380px] hover:scale-110 duration-500 transition-transform" 
                   />
                 </div>
 
