@@ -169,7 +169,6 @@ const Contact = () => {
                 </div>
                 <p className="text-sm lg:text-lg">"A2G Construction went above and beyond to make sure every element of the renovation was perfect. From the sleek tile work to the custom vanity, their craftsmanship is second to none. They kept me updated throughout the project, so I always knew what to expect. I highly recommend their services!</p>
                 <p className="font-semibold text-sm lg:text-lg mt-2">— Mike Redding</p>
-                <p className="text-sm lg:text-base">Head Coach, City Strikers FC</p>
             </div>
 
 
