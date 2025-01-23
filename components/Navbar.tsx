@@ -22,27 +22,27 @@ const Navbar = () => {
 
   
   return (
-    <div className="flex w-full justify-between lg:justify-center items-center h-[100px] px-6 md:p-6 navbar self-center scroll-smooth z-50 fixed mb-20 bg-black">
+    <div className="flex w-full justify-between lg:justify-center items-center h-[100px] px-6 md:p-6 navbar self-center scroll-smooth z-50  bg-black">
         <div className="flex lg:gap-12 justify-start lg:justify-center items-center w-full px-2">
           <Link href='/' className={cn(
                 "relative dark:text-slate-50 items-center flex space-x-1 text-slate-50  hover:text-[#0860B3]"
               )}>
                 <span className="!cursor-pointe">
-                  {/* <Image
-                    src="/assets/logo.png"
-                    width={100}
-                    height={100}
+                  <Image
+                    src="/assets/logo2.png"
+                    width={150}
+                    height={150}
                     alt="a2g construction logo"
                     className="-ml-6 mt-[1px]"
-                  /> */}
-                  <p className="font-semibold tracking-wide text-base lg:text-2xl">A2G CONSTRUCTION</p>
+                  />
+                  {/* <p className="font-semibold tracking-wide text-base lg:text-2xl">A2G CONSTRUCTION</p> */}
               </span>
           </Link>
 
           {/* <Link href='/'><span className="text-l font-bold">Argus Doctors</span>
           </Link> */}
         
-          {navItems.slice(0,2).map((navItem: any, idx: number) => (
+          {navItems.slice(0,4).map((navItem: any, idx: number) => (
             <Link 
               key={idx} 
               href={navItem.link}
@@ -53,23 +53,22 @@ const Navbar = () => {
               <span className="!cursor-pointer">{navItem.title}</span>
             </Link>
           ))}
-          
           <NavDropDown />
 
-          {navItems.slice(2,4).map((navItem: any, idx: number) => (
+          {navItems.slice(4,6).map((navItem: any, idx: number) => (
             <Link 
               key={idx} 
               href={navItem.link}
               className={cn(
-                "hidden lg:flex relative dark:text-slate-50 items-center space-x-1 text-slate-50  hover:text-[#54acff]"
+                "hidden lg:flex relative dark:text-slate-50 items-center space-x-1 text-slate-50  hover:text-[#64b4ff]"
               )}
             >
               <span className="!cursor-pointer">{navItem.title}</span>
             </Link>
           ))}
 
-          <Link href="tel:416-895-5543">
-          <Button className="w-[220px] h-[50px] text-base bg-[#0860B3] hidden lg:flex hover:bg-white hover:text-slate-950">Call us 416-895-5543</Button>
+          <Link href="tel:647-938-0208">
+          <Button className="w-[220px] h-[50px] text-base bg-[#2478c7] hidden lg:flex hover:bg-slate-50 hover:text-[#2478c7] hover:border-[1px] hover:border-[#2478c7]">Call us 647-938-0208</Button>
           </Link>
         </div>
 
@@ -92,8 +91,9 @@ const Navbar = () => {
       </label> */}
 
       <a href="/">Home</a> 
-      <a href="/#gallery">Gallery</a> 
-      <a href="/#testimonials">Testimonials</a>
+      <a href="/gallery">Gallery</a> 
+      <a href="/#projects">Featured Projects</a>
+      <a href="/#process">Process</a>
       <div className="flex w-full p-4 text-slate-50 text-base -mt-8">
           <Accordion type="single" collapsible className="flex flex-col gap-2">
                     <AccordionItem value={`services`} className="border-none p-4 rounded-2xl">
@@ -108,9 +108,9 @@ const Navbar = () => {
       </div>
       <a href="/#faq">FAQ</a> 
 
-      <Link href="tel:416-895-5543">
-          <Button className="w-[220px] h-[52px] text-lg mt-2 bg-[#0860B3]">Call us 416-895-5543</Button>
-      </Link>
+      <Link href="tel:647-938-0208">
+          <Button className="w-[220px] h-[50px] text-base bg-[#2478c7] hidden lg:flex hover:bg-white hover:text-slate-950">Call us 647-938-0208</Button>
+        </Link>
     </div>
   </nav>
    

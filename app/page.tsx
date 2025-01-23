@@ -1,3 +1,4 @@
+import Areas from '@/components/Areas'
 import CTA from '@/components/CTA'
 import Faq from '@/components/Faq'
 import Footer from '@/components/Footer'
@@ -12,6 +13,7 @@ import Subpage from '@/components/Subpage'
 import Testimonials from '@/components/Testimonials'
 import { Toaster } from '@/components/ui/toaster'
 import React from 'react'
+import GallerySection from '@/components/Gallery'
 
 const Home = () => {
   return (
@@ -22,9 +24,17 @@ const Home = () => {
       <Subpage />
       <CTA />
       <Services />
-      <Projects />
-      <Process />
-      <Faq />
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="projects">
+        <Process />
+      </div>
+      <Areas />
+      <GallerySection />
+      <div id="faq">
+        <Faq />
+      </div>
       <Footer3 />
       <Footer />
       <Footer2 />

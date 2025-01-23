@@ -20,7 +20,7 @@ export function NavDropDown() {
     <NavigationMenu className="mt-[0.1rem] hidden lg:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-base font-normal text-slate-50 hover:text-[#54acff]" >Services</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-base font-normal text-slate-50 hover:text-[#54acff]">Services</NavigationMenuTrigger>
           <NavigationMenuContent className="border-none">
             <ul className="flex flex-wrap w-[200px] md:w-[250px] ml-10 gap-1 p-2 md:p-4">
               {services.map((service:any) => (

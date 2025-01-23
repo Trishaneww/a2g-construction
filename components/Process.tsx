@@ -1,12 +1,15 @@
 import { processData } from '@/data'
 import React from 'react'
+import { Button } from './ui/button'
+import Link from 'next/link'
 
 const Process = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center mt-20 px-6">
-        <section className="flex flex-col lg:w-1/4 gap-4 text-center lg:text-left">
-            <p className="font-semibold text-3xl">OUR PROCESS</p>
-            <p className="lg:w-[85%]">Astaneh Construction commits to overseeing every aspect of your construction or renovation project. Here is a brief overview of how it works.</p>
+        <section className="flex flex-col lg:w-[30%] gap-4 text-center items-center lg:items-start lg:text-left">
+            <p className="text-3xl lg:text-4xl">OUR PROCESS</p>
+            <p className="lg:w-[85%]">From the first site visit to the moment your project is complete, we walk you through each step of the process, handling everything from permits to construction, so you can feel confident and stress-free throughout the entire journey.</p>
+            <Link href="/contact"><Button className="w-[220px] h-[55px]">Get a Free Estimate</Button></Link>
         </section>
 
         <section className="grid grid-cols-1 gap-12 bg-white border-[1px] border-slate-200 shadow-lg p-10 py-14 lg:w-[800px] mt-10 lg:mt-0">
