@@ -47,8 +47,8 @@ const ContactForm = () => {
     <div className="flex flex-col lg:items-start items-center justify-center gap-4">
 
        <div className="flex flex-col gap-2 px-4 text-center xl:text-left xl:px-2">
-            <p className="text-base lg:text-lg font-extrabold text-[#0860B3]">BOOK AN APPOINTMENT</p>
-            <p className="font-semibold text-2xl md:text-4xl">Receive a Free Estimate</p>
+            {/* <p className="text-base lg:text-lg font-extrabold text-[#0860B3]">BOOK AN APPOINTMENT</p> */}
+            <p className="text-2xl md:text-3xl">Receive a Free Estimate</p>
         </div>
 
 
@@ -59,7 +59,7 @@ const ContactForm = () => {
                 type="text" 
                 name="full_name"
                 placeholder="Full Name*"
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black"/>
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
                 <p className="ml-1 text-red-600">{nameError}</p>
             </div>
 
@@ -68,7 +68,7 @@ const ContactForm = () => {
                 type="text" 
                 name="email" 
                 placeholder="Email*" 
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black"/>
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
                 <p className="ml-1 text-red-600">{emailError}</p>
             </div>
             <div className="flex flex-col items-start w-full gap-2">
@@ -76,21 +76,21 @@ const ContactForm = () => {
                 type="text" 
                 name="phone"
                 placeholder="Phone"
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black"/>
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
             </div>
             <div className="flex flex-col items-start w-full gap-2">
                 <input 
                 type="text" 
                 name="address" 
                 placeholder="Address" 
-                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black"/>
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
             </div>
         </div>
 
           <div className="flex flex-col items-start w-full gap-2">
-            <textarea placeholder="Tell us more about your project" name="message" className="w-full border-[1px] h-[100px] lg:h-[130px] border-slate-200 p-2 rounded-md outline-none"/>
+            <textarea placeholder="Tell us more about your project" name="message" className="w-full border-[1px] h-[100px] lg:h-[130px] border-slate-200 p-2 rounded-md outline-none placeholder:text-base text-black" />
           </div>      
-          <Button type="submit" className="bg-slate-50 text-black h-[55px] px-10 mt-4 w-full">Request a Free Estimate</Button>
+          <Button type="submit" className="bg-[#2478c7] hover:bg-slate-50 hover:text-[#2478c7] hover:border-[1px] hover:border-[#2478c7] text-white h-[55px] px-10 mt-4 w-full">Request a Free Estimate</Button>
         </form>
     </div>
   )

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const Subpage = () => {
   return (
@@ -19,7 +20,7 @@ const Subpage = () => {
             <div className="flex flex-col lg:w-1/2 text-left items-start justify-center px-6 lg:px-32 gap-6 mt-20 lg:mt-0">
                 <p className="text-4xl font-semibold">Kitchen Remodeling</p>
                 <p>S & H Construction and Design is one of the leading companies for kitchen remodeling needs. We will responsibly execute all your kitchen makeover needs and handle the entire process of providing you with stunning and affordable results. From cabinet makeovers, and countertop installation to interior designing and lighting, our expert team precisely creates a functional area to serve all your culinary demands.</p>
-                <Button className="w-[220px] h-[55px]">Get a Free Estimate</Button>
+                <Link href="/contact"><Button className="w-[220px] h-[55px]">Get a Free Estimate</Button></Link>
             </div>
         </div>
 
@@ -37,7 +38,7 @@ const Subpage = () => {
             <div className="flex flex-col lg:w-1/2 text-left items-start justify-center px-6 lg:px-32 gap-6 mt-20 lg:mt-0">
                 <p className="text-4xl font-semibold">Kitchen Remodeling</p>
                 <p>S & H Construction and Design is one of the leading companies for kitchen remodeling needs. We will responsibly execute all your kitchen makeover needs and handle the entire process of providing you with stunning and affordable results. From cabinet makeovers, and countertop installation to interior designing and lighting, our expert team precisely creates a functional area to serve all your culinary demands.</p>
-                <Button className="w-[220px] h-[55px]">Get a Free Estimate</Button>
+                <Link href="/contact"><Button className="w-[220px] h-[55px]">Get a Free Estimate</Button></Link>
             </div>
         </div>
     </div>
