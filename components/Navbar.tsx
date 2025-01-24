@@ -29,9 +29,9 @@ const Navbar = () => {
               )}>
                 <span className="!cursor-pointe">
                   <Image
-                    src="/assets/logo2.png"
-                    width={150}
-                    height={150}
+                    src="/assets/logo3.png"
+                    width={350}
+                    height={350}
                     alt="a2g construction logo"
                     className="-ml-6 mt-[1px]"
                   />

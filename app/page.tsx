@@ -23,7 +23,9 @@ const Home = () => {
       <Testimonials />
       <Subpage />
       <CTA />
-      <Services />
+      <div id="projects">
+        <Services />
+      </div>
       <div id="projects">
         <Projects />
       </div>

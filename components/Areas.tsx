@@ -5,7 +5,7 @@ import React from 'react'
 const Areas = () => {
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-slate-100 mt-12">
-        <div className="flex flex-col gap-2 w-[85%] lg:w-[65%]">
+        <div className="flex flex-col gap-2 w-[85%] lg:w-[70%]">
             <p className="text-3xl lg:text-4xl">AREAS WE SERVICE</p>
 
             <section className="flex flex-col gap-4 mt-6 lg:mt-6">
@@ -17,7 +17,7 @@ const Areas = () => {
                 </ul>
             </section>
 
-            <p className="text-base lg:text-lg font-light mt-6"><Link href="/contact" className="text-blue-700">Contact us</Link> today for a free consultation and make your renovation dreams a reality.</p>
+            <p className="text-base lg:text-lg font-light mt-6"><Link href="/contact" className="text-blue-500 font-semibold">Contact us</Link> today for a free consultation and make your renovation dreams a reality.</p>
         </div>
     </div>
   )
