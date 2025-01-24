@@ -39,14 +39,14 @@ export const services = [
         id:2,
         title: 'Bathroom Renovations',
         src: '/assets/service2.png',
-        desc:"Enhance your outdoor living with custom decks and durable fences that combine style and strength. Perfect for entertaining, privacy, and boosting curb appeal.",
+        desc:"Upgrade your bathroom with modern designs, quality fixtures, and flawless finishes. We create spaces that are stylish, functional, and tailored to your needs.",
         link: '#services'
     },
     {
         id:4,
         title: 'Decks & Fences',
         src: '/assets/decks.jpg',
-        desc:"Upgrade your bathroom with modern designs, quality fixtures, and flawless finishes. We create spaces that are stylish, functional, and tailored to your needs.",
+        desc:"Enhance your outdoor living with custom decks and durable fences that combine style and strength. Perfect for entertaining, privacy, and boosting curb appeal.",
         link: '#services'
     },
     {
@@ -203,28 +203,28 @@ export const testimonials = [
         name:"Karen L",
         email:'paulallen1@gmail.com',
         src: '/assets/images/headshot1.png',
-        desc:'"Gerhard turned our dark, unfinished basement into a cozy family retreat. They listened to every detail of our vision and brought it to life with incredible craftsmanship. The entire process was smooth, and we couldn’t be happier with the results!"',
+        desc:'"Gerhard turned our dark, unfinished basement into a cozy family retreat. They listened to every detail of our vision and brought it to life with incredible craftsmanship. The entire process was smooth, and we could not be happier with the results!"',
     },
     {
       id:1,
       name:"Sarah J",
       email:'mariost@gmail.com',
       src: '/assets/images/headshot2.png',
-      desc:'"Our backyard feels like a whole new space thanks to the beautiful deck and sturdy fence they built for us. The team was professional, efficient, and the quality of their work is outstanding. We’ve already recommended them to friends!"',
+      desc:'"Our backyard feels like a whole new space thanks to the beautiful deck and sturdy fence they built for us. The team was professional, efficient, and the quality of their work is outstanding. We have already recommended them to friends!"',
   },
   {
     id:1,
     name:"Suzy W",
     email:'marianadsouza1@gmail.com',
     src: '/assets/images/headshot3.png',
-    desc:'"I never thought my outdated bathroom could look this modern and luxurious! A2G Construction exceeded my expectations with their attention to detail and creative design. It’s now my favorite room in the house."',
+    desc:'"I never thought my outdated bathroom could look this modern and luxurious! A2G Construction exceeded my expectations with their attention to detail and creative design. It is now my favorite room in the house."',
   }]
 
   export const faqData = [
     {
         id: 1,
         item: 'How long does a typical renovation project take?',
-        content: "The timeline for a renovation project depends on its size and complexity. Smaller projects, like painting or minor updates, may take just a few days, while larger renovations, such as full basements or bathroom remodels, can take several weeks. During the planning phase, we’ll provide a clear timeline tailored to your specific project."
+        content: "The timeline for a renovation project depends on its size and complexity. Smaller projects, like painting or minor updates, may take just a few days, while larger renovations, such as full basements or bathroom remodels, can take several weeks. During the planning phase, we will provide a clear timeline tailored to your specific project."
     },
     {
         id: 2,
@@ -234,12 +234,12 @@ export const testimonials = [
     {
         id: 3,
         item: 'Can I make changes to the design or plan during the project?',
-        content: "We understand that ideas can evolve, and we do our best to accommodate changes during the project. However, some adjustments may affect the timeline or budget, so we’ll discuss all details with you to make informed decisions together."
+        content: "We understand that ideas can evolve, and we do our best to accommodate changes during the project. However, some adjustments may affect the timeline or budget, so we will discuss all details with you to make informed decisions together."
     },
     {
         id: 4,
         item: 'What areas do you serve, and do you offer free estimates?',
-        content: "We proudly serve [insert service areas here] and offer free, no-obligation estimates for all our projects. Contact us to schedule a consultation and start turning your vision into reality!"
+        content: "We proudly serve clients located near the GTA and offer free, no-obligation estimates for all our projects. Contact us to schedule a consultation and start turning your vision into reality!"
     }
 ]
 

@@ -31,9 +31,19 @@ const Projects = () => {
                     />
                     </div>
                     
-                    <div className="flex flex-col items-center justify-center p-2 px-6 mt-4">
-                        <p className="text-lg lg:text-xl font-medium">{renovation.title2}</p>
+                    <div className="relative flex flex-col items-center justify-center p-2 px-6 mt-4">
+                        <p className="text-lg lg:text-xl font-medium mt-3">{renovation.title2}</p>
                         <p className="text-sm">{renovation.title}</p>
+
+                        <div className="flex gap-2 absolute -top-2 lg:left-[11.5rem] z-30">
+                        <div className="w-[10px] h-[10px] bg-black rounded-full group-hover:bg-gray-300 duration-500 transition-all ease-in-out">
+                            
+                        </div>
+                        <div className="w-[10px] h-[10px] bg-gray-300 rounded-full group-hover:bg-black duration-500 transition-all ease-in-out">
+                            
+                        </div>
+                  
+                    </div>
                     </div>
                 </div>
             ))}

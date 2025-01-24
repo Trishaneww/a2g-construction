@@ -22,7 +22,7 @@ export function NavDropDown() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-base font-normal text-slate-50 hover:text-[#54acff]">Services</NavigationMenuTrigger>
           <NavigationMenuContent className="border-none">
-            <ul className="flex flex-wrap w-[200px] md:w-[250px] ml-10 gap-1 p-2 md:p-4 mt-6">
+            <ul className="flex flex-wrap w-[200px] md:w-[250px] ml-10 gap-1 p-2 md:p-4 mt-6 bg-black">
               {services.map((service:any) => (
                 <a href={service.link} key={service.id} className="w-full lg:w-4/5 p-2 text-slate-50">{service.title}</a>
               ))}

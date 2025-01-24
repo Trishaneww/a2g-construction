@@ -30,7 +30,7 @@ const Services: React.FC = () => {
             <p className="text-lg font-light mt-6 lg:w-[60%]">Discover our range of expert renovation and construction services, designed to bring your vision to life with precision, creativity, and lasting quality.</p>
           </section>
 
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:hidden">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:hidden mt-6">
             {services.slice(0,8).map((service, idx) => (
               <div className="bg-white slate border-[1px] border-gray-200 flex flex-col max-w-[400px] h-[420px] xl:h-[540px] lg:w-[370px] shadow-lg" key={idx}>
                 <div className="overflow-hidden">
