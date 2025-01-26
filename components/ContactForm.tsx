@@ -26,8 +26,7 @@ const ContactForm = () => {
           } 
  
       } else {
-
-          emailjs.sendForm('service_luvg8op', 'template_sx6i957' , e.target , '1MxDwCSvQF6Leln4f');
+          emailjs.sendForm('service_27gc5nm', 'template_oa92t7i' , e.target , 'DIcorh4xby4Tb4Xbe');
            e.target.reset()
            setEmailError("")
            setNameError("")
@@ -50,7 +49,6 @@ const ContactForm = () => {
             {/* <p className="text-base lg:text-lg font-extrabold text-[#0860B3]">BOOK AN APPOINTMENT</p> */}
             <p className="text-2xl md:text-3xl">Receive a Free Estimate</p>
         </div>
-
 
       <form className="w-[95%] lg:w-full flex flex-col items-center xl:items-start gap-4 px-2" onSubmit={sendEmail}>
         <div className="grid grid-cols-2 gap-2 w-full">
