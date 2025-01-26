@@ -40,7 +40,6 @@ const Contact = () => {
     const { toast } = useToast()
     const sendEmail = (e:any) => {
       e.preventDefault();
-      console.log("clicked")
   
       try {
         console.log("hi")
@@ -54,8 +53,7 @@ const Contact = () => {
             } 
    
         } else {
-            console.log("hello")
-            emailjs.sendForm('service_luvg8op', 'template_sx6i957' , e.target , '1MxDwCSvQF6Leln4f');
+            emailjs.sendForm('service_27gc5nm', 'template_oa92t7i' , e.target , 'DIcorh4xby4Tb4Xbe');
              e.target.reset()
              setEmailError("")
              setNameError("")
@@ -91,63 +89,77 @@ const Contact = () => {
                 <p className="font-semibold">Service of Interest</p>
                 <div className="flex gap-2">
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300" />
+                        <Checkbox id="terms" name="basement" className=" border-gray-300" />
                         <p>Legal Basements</p>
                     </div>
 
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <Checkbox id="terms" name="bathroom" className=" border-gray-300"/>
                         <p>Bathroom Renovations</p>
                     </div>
                 </div>
 
                 <div className="flex gap-2">
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <Checkbox id="terms" name="decks" className=" border-gray-300"/>
                         <p>Decks & Fences</p>
                     </div>
 
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <Checkbox id="terms" name="potlights" className=" border-gray-300"/>
                         <p>Indoor & Outdoor Potlights</p>
                     </div>
                 </div>
 
                 <div className="flex gap-2">
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms"className="bg-slate-50 border-gray-300" />
+                        <Checkbox id="terms" name="painting" className="bg-slate-50 border-gray-300" />
                         <p>Painting (Interior & Exterior)</p>
                     </div>
 
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <Checkbox id="terms" name="handyman" className=" border-gray-300"/>
                         <p>Handyman Services</p>
                     </div>
                 </div>
 
                 <div className="flex gap-2">
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms"className="bg-slate-50 border-gray-300" />
+                        <Checkbox id="terms" name="flooring" className="bg-slate-50 border-gray-300" />
                         <p>Flooring</p>
                     </div>
 
                     <div className="flex gap-2 items-center w-[250px]">
-                        <Checkbox id="terms" className=" border-gray-300"/>
+                        <Checkbox id="terms" name="landscaping" className=" border-gray-300"/>
                         <p>Landscaping</p>
                     </div>
                 </div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
-                <Input type="text" placeholder='Name' name="full_name" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
+            <div className="flex flex-col items-start w-full gap-2">
+                <Input 
+                type="text" 
+                name="full_name"
+                placeholder="Full Name*"
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
+                <p className="ml-1 text-red-600">{nameError}</p>
+            </div>
 
-                <Input type="email" placeholder='Email' name="email" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
+            <div className="flex flex-col items-start w-full gap-2">
+                <Input 
+                type="text" 
+                name="email" 
+                placeholder="Email*" 
+                className="w-full border-[1px] h-[40px] lg:h-[48px] border-slate-200 p-2 rounded-md outline-none text-black placeholder:text-base"/>
+                <p className="ml-1 text-red-600">{emailError}</p>
+            </div>
 
                 <Input type="text" placeholder='Phone' name="phone" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
 
                 <Input type="text" placeholder='Address' name="address" className="w-full h-[50px] p-2 placeholder:text-base focus-visible:ring-0"/>
             </div>
-            <Textarea placeholder="Tell us more about your project" name="phone" className="mt-2 w-full h-[115px] p-2 placeholder:text-base focus-visible:ring-0" />
+            <Textarea placeholder="Tell us more about your project" name="message" className="mt-2 w-full h-[115px] p-2 placeholder:text-base focus-visible:ring-0" />
             <Button type="submit" className="w-full h-[55px] mt-12 text-lg">Lets get started!</Button>
         </form>
 
