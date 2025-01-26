@@ -279,48 +279,48 @@ export const processData = [
 
 export const areas = [
     {
-        name:'Leaside'
+        name:'Toronto GTA'
     },
     {
-        name:'Lawrence Park'
+        name:'Hamilton'
     },
     {
-        name:'Aurora'
+        name:'Burlington'
     },
     {
-        name:'Oakville'
+        name:'Milton'
     },
     {
-        name:'Markham'
+        name:'Guelph'
     },
     {
-        name:'Rosedale'
+        name:'Cambridge'
     },
     {
-        name:'Moore Park'
+        name:'Kitchener'
     },
     {
-        name:'King City'
+        name:'Mississauga'
     },
     {
-        name:'Richmond Hill'
+        name:'Etobicoke'
     },
     {
         name:'Vaughan'
     },
     {
-        name:'Forest Hill'
+        name:'Kleinburg'
     },
     {
-        name:'Yorkville'
+        name:'Woodbridge'
     },
     {
-        name:'North York'
+        name:'Caledon'
     },
     {
-        name:'Muskoka'
+        name:'Markham'
     },
     {
-        name:'Etobicoke'
+        name:'Pickering'
     },
 ]

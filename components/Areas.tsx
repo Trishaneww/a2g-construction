@@ -17,7 +17,9 @@ const Areas = () => {
                 </ul>
             </section>
 
-            <p className="text-base lg:text-lg font-light mt-6"><Link href="/contact" className="text-blue-500 font-semibold">Contact us</Link> today for a free consultation and make your renovation dreams a reality.</p>
+            <p className="text-base lg:text-lg font-light mt-6">Thank you for your interest in our services. If your location is outside the areas mentioned, please do not hesitate to  <Link href="/contact" className="text-blue-500 font-semibold">contact us</Link> for further details. Our team will be happy to assist you and explore options to meet your needs.</p>
+
+           
         </div>
     </div>
   )
