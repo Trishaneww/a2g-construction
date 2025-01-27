@@ -48,15 +48,15 @@ const Footer = () => {
                 <Link href='mailto:a2gconstructioninc@gmail.com'>a2gconstructioninc@gmail.com</Link>
                 <li>647-938-0208</li>
                 <div className="flex gap-2 mt-2">
-                    <Link href="/" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
+                    <Link href="https://www.instagram.com/a2g_construction?utm_source=qr&igsh=NWg4NDJ4Zjc1Mmdj" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
                         <Instagram  />
                     </Link>
-                    <Link href="/" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
+                    <Link href="https://www.facebook.com/share/19xzS6VVCw/" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
                         <Facebook  />
                     </Link>
-                    <Link href="/" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
+                    {/* <Link href="/" className="flex justify-center items-center rounded-full h-[40px] w-[40px] border-[1px] border-gray-200 text-slate-50 p-2">
                         <Linkedin />
-                    </Link>
+                    </Link> */}
                 </div>
             </ul>
         </section>
