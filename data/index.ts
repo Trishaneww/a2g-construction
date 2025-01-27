@@ -45,7 +45,7 @@ export const services = [
     {
         id:4,
         title: 'Decks & Fences',
-        src: '/assets/decks.jpg',
+        src: '/assets/reno23.png',
         desc:"Enhance your outdoor living with custom decks and durable fences that combine style and strength. Perfect for entertaining, privacy, and boosting curb appeal.",
         link: '#services'
     },
@@ -89,18 +89,23 @@ export const services = [
 export const gallery = [
     {
         id:1,
-        src: '/assets/reno3.png',
+        src: '/assets/reno19.png',
         title: 'Bathroom Renovation'
     },
     {
         id:1,
-        src: '/assets/reno9.png',
-         title: 'Flooring Installment'
+        src: '/assets/reno22.png',
+        title: 'Deck Construction'
     },
     {
         id:1,
         src: '/assets/reno11.png',
         title: 'Basement Renovation'
+    },
+    {
+        id:1,
+        src: '/assets/reno9.png',
+         title: 'Flooring Installment'
     },
     {
         id:1,
@@ -135,6 +140,36 @@ export const gallery = [
     {
         id:1,
         src: '/assets/reno18.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno19.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno3.png',
+        title: 'Bathroom Renovation'
+    },
+    {
+        id:1,
+        src: '/assets/reno20.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno21.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno22.png',
+        title: 'Window Enlargment'
+    },
+    {
+        id:1,
+        src: '/assets/reno23.png',
         title: 'Window Enlargment'
     },
 ]
@@ -285,6 +320,12 @@ export const areas = [
         name:'Hamilton'
     },
     {
+        name:'Oakville'
+    },
+    {
+        name:'Campberville'
+    },
+    {
         name:'Burlington'
     },
     {
@@ -322,5 +363,14 @@ export const areas = [
     },
     {
         name:'Pickering'
+    },
+    {
+        name:'Ajax'
+    },
+    {
+        name:'Richmond Hill'
+    },
+    {
+        name:'Scarborough'
     },
 ]
