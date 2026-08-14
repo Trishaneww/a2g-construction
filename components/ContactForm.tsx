@@ -43,14 +43,14 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="flex flex-col lg:items-start items-center justify-center gap-4">
+    <div className="w-full lg:w-auto flex flex-col lg:items-start items-center justify-center gap-4">
 
-       <div className="flex flex-col gap-2 px-4 text-center xl:text-left xl:px-2">
+       <div className="flex flex-col gap-2 text-center xl:text-left xl:px-2">
             {/* <p className="text-base lg:text-lg font-extrabold text-[#0860B3]">BOOK AN APPOINTMENT</p> */}
             <p className="text-2xl md:text-3xl">Receive a Free Estimate</p>
         </div>
 
-      <form className="w-[95%] lg:w-full flex flex-col items-center xl:items-start gap-4 px-2" onSubmit={sendEmail}>
+      <form className="w-full flex flex-col items-center xl:items-start gap-4 lg:px-2" onSubmit={sendEmail}>
         <div className="grid grid-cols-2 gap-2 w-full">
             <div className="flex flex-col items-start w-full gap-2">
                 <input 

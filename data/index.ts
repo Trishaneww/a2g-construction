@@ -33,56 +33,56 @@ export const services = [
         title: 'Legal Basements',
         src: '/assets/reno11.png',
         desc:"Transform your basement into a functional and beautiful living space with our expert design and finishing services. From cozy retreats to home offices, we bring your vision to life.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:2,
         title: 'Bathroom Renovations',
         src: '/assets/service2.png',
         desc:"Upgrade your bathroom with modern designs, quality fixtures, and flawless finishes. We create spaces that are stylish, functional, and tailored to your needs.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:4,
         title: 'Decks & Fences',
         src: '/assets/reno23.png',
         desc:"Enhance your outdoor living with custom decks and durable fences that combine style and strength. Perfect for entertaining, privacy, and boosting curb appeal.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:6,
         title: 'Indoor & Outdoor Potlights',
         src: '/assets/potlight.jpg',
         desc:"Illuminate your home with professionally installed potlights for a sleek, modern look. Whether indoors or outdoors, we ensure perfect placement and energy efficiency.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:7,
         title: 'Painting (Interior & Exterior)',
         src: '/assets/painting.jpeg',
         desc:"Refresh your homes appearance with our professional painting services. We deliver smooth, vibrant finishes for both interiors and exteriors that last.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:8,
         title: 'Handyman Services',
         src: '/assets/handyman.jpg',
         desc:"From minor repairs to maintenance projects, we are your go-to for reliable and efficient handyman services that keep your home in top shape.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:3,
         title: 'Flooring',
         src: '/assets/flooring.png',
         desc:"Elevate your space with high-quality flooring installation. From hardwood to tile, we offer expert craftsmanship and attention to detail for every room.",
-        link: '#services'
+        link: '/#services'
     },
     {
         id:5,
         title: 'Landscaping',
         src: '/assets/landscaping.jpeg',
         desc:"Beautify your outdoor space with our custom landscaping solutions. From lush gardens to stunning patios, we create inviting landscapes that enhance your property.",
-        link: '#services'
+        link: '/#services'
     },
 ]
 
